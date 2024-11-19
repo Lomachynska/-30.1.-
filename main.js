@@ -14,11 +14,11 @@ function isValidEmail(email) {
 }
 
 
-console.log(isValidEmail('example@example.com')); // Повинно вивести: true
-console.log(isValidEmail('invalid-email'));       // Повинно вивести: false
-console.log(isValidEmail('user@domain.co'));      // Повинно вивести: true
-console.log(isValidEmail('user@domain'));         // Повинно вивести: false
-console.log(isValidEmail('user@.com'));           // Повинно вивести: false
+console.log(isValidEmail('example@example.com')); // виведе: true
+console.log(isValidEmail('invalid-email'));       // виведе: false
+console.log(isValidEmail('user@domain.co'));      // виведе: true
+console.log(isValidEmail('user@domain'));         // виведе: false
+console.log(isValidEmail('user@.com'));           // виведе: false
 
 // Для валідації електронної адреси за допомогою регулярного виразу можна скористатися таким патерном, який перевіряє, чи містить рядок:
 // Літери, цифри або спеціальні символи перед знаком "@".
@@ -50,12 +50,12 @@ function isValidUrl(url) {
   return urlPattern.test(url);
 }
 
-console.log(isValidUrl('https://www.example.com'));  // Повинно вивести: true
-console.log(isValidUrl('http://example.com'));      // Повинно вивести: true
-console.log(isValidUrl('www.example.com'));         // Повинно вивести: true
-console.log(isValidUrl('example.com'));             // Повинно вивести: false
-console.log(isValidUrl('invalid-url'));             // Повинно вивести: false
-console.log(isValidUrl('https://example.com/test'));// Повинно вивести: true
+console.log(isValidUrl('https://www.example.com'));  // виведе: true
+console.log(isValidUrl('http://example.com'));      // виведе: true
+console.log(isValidUrl('www.example.com'));         // виведе: true
+console.log(isValidUrl('example.com'));             // виведе: false
+console.log(isValidUrl('invalid-url'));             // виведе: false
+console.log(isValidUrl('https://example.com/test'));// виведе: true
 
 
 //^(https?:\/\/)? — перевіряє наявність схеми (http:// або https://). Знак ? означає, що це поле є необов'язковим.
